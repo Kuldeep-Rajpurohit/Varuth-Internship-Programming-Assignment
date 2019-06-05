@@ -1,3 +1,28 @@
+/**
+
+Consider a matrix M2*2 . Write a program that:
+a) Reads from user: elements of the matrix M
+b) Check if Eigenvalues and Eigenvectors exists for matrix M
+c) Find the Eigenvalues and any two Eigenvectors of matrix M
+d) Prints with suitable message the matrix M , its Eigenvalues and Eigenvectors
+
+
+Variables used : 
+    Mat: 2*2 matrix
+    Y: Eigen Values
+    a,b,c: Co-efficient of characteristic equation aY^2+bY+c=0
+    del = (b^2)-4ac
+    E: Eigen Space
+    Vec1 & Vec2: Eigen vectors
+    
+Logic used :
+
+characteristic equation is got by this expression:  det(YI-Mat)=0    -------- I is Identity Matrix
+This characterstic equation is in the form : aY^2+bY+c = 0
+And using a,b and c we find the value of delta : delta = b^2 - 4ac
+
+**/
+
 #include<stdio.h>
 #include<math.h>
 int main()
@@ -51,3 +76,17 @@ int main()
         }
         return 0;
 }
+
+/**
+
+
+OUTPUT:
+Enter the elements of the 2*2 matrix :
+2 3 4 5
+
+Eigen values are 7.27 and -0.27
+Eigen vectors are [-0.57  1.00] and [1.32  1.00]
+
+
+Process returned 0 (0x0)   execution time : 7.132 s
+Press any key to continue.
